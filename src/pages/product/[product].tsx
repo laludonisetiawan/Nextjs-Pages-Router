@@ -46,8 +46,8 @@ export async function getStaticPaths() {
 
   const paths = response.data.map((product: ProductType) => ({
     params: {
-      product: product.id
-    }
+      product: product.id,
+    },
   }));
   return { paths, fallback: false };
 }
