@@ -1,13 +1,7 @@
 import styles from './product.module.scss';
 import Image from 'next/image';
+import { ProductType } from '@/types/product.type';
 
-type ProductType = {
-  id: string;
-  name: string;
-  price: number;
-  image: string;
-  category: string;
-};
 const ProductView = ({ products }: { products: ProductType[] }) => {
   return (
     <div className={styles.product}>
